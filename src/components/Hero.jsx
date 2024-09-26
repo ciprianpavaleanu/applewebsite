@@ -10,7 +10,7 @@ const Hero = () => {
   );
 
   const handleVideoSrcSet = () => {
-    if (window.innerWidth < 520) {
+    if (window.innerWidth < 340) {
       setVideoSrc(smallHeroVideo);
     } else {
       setVideoSrc(heroVideo);
@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="w-full h-[100vh] bg-black relative">
+    <section id="home" className="w-full nav-height bg-black relative">
       <div className="h-5/6 w-full flex-center flex-col">
         <p id="hero" className="hero-title">
           iPhone 15 Pro
